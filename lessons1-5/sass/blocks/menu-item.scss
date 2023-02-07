@@ -1,0 +1,54 @@
+
+.menu-item {
+
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 2;
+  color: $basic-light-grey-alfa;
+
+  &:hover {
+
+    text-decoration: underline;
+    color: $basic-light-grey;
+  }
+
+  &:active {
+
+    opacity: 0.50;
+  }
+}
+
+.menu-item--current {
+
+  color: $basic-light-grey;
+  cursor: auto;
+
+  &:hover,
+  &:hover::after {
+
+    text-decoration: none;
+  }
+
+  &:active {
+
+    opacity: 1;
+  }
+}
+
+.menu-item--search {
+
+  &:hover {
+
+    text-decoration: none;
+    color: $basic-light-grey;
+  }
+}
+
+.menu-item--dropdown svg {
+
+  margin-left: 5px;
+}

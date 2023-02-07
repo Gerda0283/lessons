@@ -1,0 +1,50 @@
+
+/*Typography*/
+
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins Regular"),
+       local("Poppinsregular"),
+       url("../fonts/poppins-regular-webfont.woff2") format("woff2"),
+       url("../fonts/poppins-regular-webfont.svg") format("woff"),
+       url("../fonts/poppins-regular-webfont.svg") format("svg");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins bold"),
+       local("Poppinsbold"),
+       url("../fonts/poppins-bold-webfont.woff2") format("woff2"),
+       url("../fonts/poppins-bold-webfont.woff") format("woff"),
+       url("../fonts/poppins-bold-webfont.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins Medium"),
+       local("Poppinsmedium"),
+       url("../fonts/poppins-medium-webfont.woff2") format("woff2"),
+       url("../fonts/poppins-medium-webfont.woff") format("woff"),
+       url("../fonts/poppins-medium-webfont.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppinslight Italic"),
+       local("Poppinslightitalic"),
+       url("../fonts/poppins-lightitalic-webfont.woff2") format("woff2"),
+       url("../fonts/poppins-lightitalic-webfont.woff") format("woff"),
+       url("../fonts/poppins-lightitalic-webfont.svg") format("svg");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}

@@ -1,0 +1,32 @@
+
+.blockquote {
+
+  flex-direction: column;
+  margin: calc(38%/4) auto;
+  text-align: center;
+  color: $basic-light-grey;
+
+  span {
+
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 1.7;
+    text-transform: capitalize;
+    opacity: 0.75;
+
+    &:last-of-type {
+
+      text-transform: uppercase;
+    }
+  }
+
+  p {
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    line-height: 1.6;
+    font-weight: 700;
+    color: inherit;
+  }
+}

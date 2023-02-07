@@ -1,0 +1,66 @@
+
+body {
+
+  font-family: "Poppins";
+  font-size: 14px;
+  line-height: 1.78;
+  font-weight: 300;
+}
+
+[class*="__container"] {
+
+  max-width: none;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  @media(min-width: $tablet-width) {
+
+    max-width: 750px;
+    padding: 0 0;
+  }
+
+  @media(min-width: $sm-desktop-width) {
+
+    max-width: 970px;
+  }
+
+  @media(min-width: $desktop-width) {
+
+    max-width: 1170px;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+
+  font-size: 25px;
+  line-height: 1.6;
+  font-weight: 700;
+  color: $basic-black;
+}
+
+h3,
+h4 {
+
+  font-weight: 500;
+}
+
+h4 {
+
+  font-size: 16px;
+}
+
+p {
+
+  font-size: inherit;
+  color: $basic-dark-grey;
+}
+
+img {
+
+  max-width: 100%;
+  border-radius: 0 0 0 0;
+  object-fit: contain;
+}

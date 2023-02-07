@@ -1,0 +1,29 @@
+
+.page__wrapper {
+
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  min-height: 100%;
+}
+
+.page__main {
+
+  display: grid;
+  height: 100%;
+  grid-template-rows: min-content min-content min-content;
+  grid-auto-flow: row;
+  gap: 0;
+}
+
+.page__header {
+
+  background-color:$basic-grey;
+  background-image: url(../img/1x/intro_picture_1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/2x/intro_picture_2x.jpg);
+  }
+}
