@@ -1,0 +1,115 @@
+
+.list--background-use {
+
+  li {
+
+    background: url("../img/svg/cross_red-in-round.svg") 0 2px / 20px no-repeat;
+  }
+}
+
+.list--pseudo-use {
+
+  li {
+
+    &::before {
+
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: url("../img/svg/check_in-round_green.svg") 0 2px / 20px no-repeat;
+      content: "";
+    }
+  }
+}
+
+.list--pseudo-two-use {
+
+  li {
+
+    &::before {
+
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      top: 2px;
+      left: 0;
+      background-color: $basic;
+      border: 1px solid $basic-blue;
+      border-radius: 50%;
+      content: "";
+    }
+
+    &::after {
+
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      top: 6px;
+      left: 4px;
+      background: url("../img/svg/check.svg") 2px 2px / 8px no-repeat;
+      content: "";
+    }
+  }
+}
+
+.list--pseudo-arrow-use {
+
+  li {
+
+    &::before {
+
+      width: 24px;
+      height: 8px;
+      position: absolute;
+      top: 8px;
+      left: 0;
+      background: url("../img/svg/arrow_to_right.svg") 0 0 / 20px no-repeat;
+      content: "";
+    }
+  }
+}
+
+.list--style-use {
+
+  li {
+
+    &::before {
+
+      width: 8px;
+      height: 8px;
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      background-color: $basic-blue;
+      border-radius: 50%;
+      content: "";
+    }
+  }
+}
+
+.list--pseudo-count-use {
+
+  li {
+
+    display: flex;
+    align-items: flex-start;
+    padding-left: 0;
+
+    &::before {
+      flex-basis: 1.7857rem;
+      height: 1.7857rem;
+      flex-shrink: 0;
+      margin-right: 8px;
+      counter-increment: item;
+      content: counter(item);
+      display: block;
+      line-height: 25px;
+      color: $basic-white;
+      background: $basic-blue;
+      border-radius: 3px;
+      text-align: center;
+    }
+  }
+}
