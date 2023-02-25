@@ -9,19 +9,30 @@ body {
 
 [class*="__container"] {
 
-  max-width: none;
+  max-width: 310px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 1.071428rem;
+
+
+  @media(min-width: $mobile-width) {
+
+    max-width: 410px;
+  }
+
+  @media(min-width: $sm-tablet-width) {
+
+    max-width: 510px;
+  }
 
   @media(min-width: $tablet-width) {
 
     max-width: 750px;
-    padding: 0 0;
   }
 
   @media(min-width: $sm-desktop-width) {
 
     max-width: 970px;
+    padding: 0 0;
   }
 
   @media(min-width: $desktop-width) {
@@ -35,10 +46,15 @@ h2,
 h3,
 h4 {
 
-  font-size: 25px;
+  font-size: 1.5rem;
   line-height: 1.6;
   font-weight: 700;
   color: $basic-black;
+
+  @media(min-width: $tablet-width) {
+
+    font-size: 1.787rem;
+  }
 }
 
 h3,
@@ -49,13 +65,23 @@ h4 {
 
 h4 {
 
-  font-size: 16px;
+  font-size: 1.14rem;
 }
 
 p {
 
   font-size: inherit;
   color: $basic-dark-grey;
+}
+
+br {
+
+  display: none;
+
+  @media(min-width: $sm-desktop-width) {
+
+    display: inline;
+  }
 }
 
 img {

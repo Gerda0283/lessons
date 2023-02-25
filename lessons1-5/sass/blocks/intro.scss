@@ -1,10 +1,30 @@
 
+.intro {
+
+  background-color:$basic-grey;
+  background-image: url(../img/1x/intro_picture_1x.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/2x/intro_picture_2x.jpg);
+  }
+}
+
 .intro__container {
 
   display: flex;
-  min-height: 100px;
-  justify-content: space-between;
+  min-height: 7.1428rem;
+  flex-direction: column;
+  justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  padding: 10px 0;
+
+  @media (min-width: $tablet-width) {
+
+    max-width: inherit;
+    gap: 1.8rem;
+  }
+
 }

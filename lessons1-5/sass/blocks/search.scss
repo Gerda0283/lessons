@@ -1,12 +1,18 @@
 
 .search {
+
   display: flex;
   align-items: center;
-  gap:5px
+  gap:0.35714rem;
+}
+
+.search__input {
+
+  width: 100%;
 }
 
 .search__label {
 
   display: flex;
-  padding-top: 5px;
+  padding-top: 0.35714rem;
 }

@@ -4,11 +4,18 @@
   position: relative;
   display: flex;
   justify-content: flex-start;
-  font-size: 12px;
+  padding: 0.5rem 1.3rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: 500;
   line-height: 2;
   color: $basic-light-grey-alfa;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+
+    font-size: 0.95rem;
+  }
 
   &:hover {
 
@@ -50,5 +57,11 @@
 
 .menu-item--dropdown svg {
 
-  margin-left: 5px;
+  align-self: center;
+  margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+
+    margin-left: 0.3571rem;
+  }
 }

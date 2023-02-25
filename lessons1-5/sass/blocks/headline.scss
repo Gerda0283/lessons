@@ -1,21 +1,21 @@
 
-.headline--first {
-
-  margin-top: calc(600px/38);
-  margin-bottom: calc(600px/16);
-}
-
-.headline--second {
-
-  margin-bottom: calc(600px/16);
-}
-
 .headline--third {
 
-  margin-bottom: calc(600px/16);
+  text-align: center;
+
+  @media (min-width: $sm-tablet-width) {
+
+    text-align: left;
+  }
 }
 
 .headline--forth {
 
+  text-align: center;
   order: 2;
+
+  @media (min-width: $sm-tablet-width) {
+
+    text-align: left;
+  }
 }

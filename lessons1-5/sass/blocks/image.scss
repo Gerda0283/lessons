@@ -2,14 +2,30 @@
 .image {
 
   display: flex;
-  gap: 30px;
+  row-gap: 0.75rem;
+  gap: 2.1rem;
   flex-wrap: wrap;
-  margin-bottom: calc(100%/25);
+  padding-bottom: 0;
 
-  img {
+  div {
 
-    width: calc(100%/2 - 30px/2);
-    object-fit: cover;
+    flex-shrink: 2;
+
+    img {
+
+      object-fit: cover;
+    }
+
+    @media (min-width: $sm-tablet-width) {
+
+      flex-grow: 0.5;
+      flex-basis: 45%;
+
+    }
+  }
+  @media (min-width: $tablet-width) {
+
+    padding-bottom: 3rem;
   }
 }
 
