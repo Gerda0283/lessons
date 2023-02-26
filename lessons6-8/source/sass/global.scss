@@ -45,18 +45,6 @@ body {
   }
 }
 
-[type="button"] {
-
-  position: relative;
-  display: inline-block;
-  text-align: center;
-  padding: 0.7143rem 2.1429rem;
-  min-width: 10rem;
-  font-size: 1.1428rem;
-  line-height: 1.5;
-  font-weight: 500;
-}
-
 h1,
 h2,
 h3,
@@ -128,7 +116,7 @@ br {
 
   display: none;
 
-  @media(min-width: $sm-desktop-width) {
+  @media(min-width: $desktop-width) {
 
     display: inline;
   }
@@ -139,4 +127,22 @@ img {
   max-width: 100%;
   border-radius: 0 0 0 0;
   object-fit: contain;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }

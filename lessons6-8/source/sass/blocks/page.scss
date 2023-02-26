@@ -84,12 +84,22 @@
   margin: 0 auto;
   max-width: 90%;
 
+  &:not(:last-child) {
+
+    margin-bottom: 2.8571rem;
+  }
+
   @media (min-width: $tablet-width) {
 
     max-width: calc(100%/1.15);
   }
 
-  @media (min-width: $sm-desktop-width) {
+  @media (min-width: $pre-sm-desktop-width) {
+
+    max-width: calc(100%/1.2);
+  }
+
+  @media (min-width: $desktop-width) {
 
     max-width: calc(100%/1.7);
   }

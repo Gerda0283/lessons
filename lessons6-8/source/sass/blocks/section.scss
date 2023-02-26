@@ -13,6 +13,8 @@
 
   p {
 
+    max-width: 50%;
+    margin: 0 auto;
     text-align: center;
 
     &:not(:last-child) {
@@ -20,8 +22,10 @@
       margin-bottom: 2.1428rem;
     }
 
-    @media(min-width: $tablet-width) {
+    @media(min-width: $desktop-width) {
 
+      max-width: auto;
+      margin: 0 0;
       text-align: left;
     }
   }
@@ -54,9 +58,16 @@
 
     @media(min-width: $pre-sm-desktop-width) {
 
-      justify-content: space-between;
+      justify-content: flex-end;
       align-items: center;
       text-align: left;
+      gap: 3.57143rem;
+    }
+
+    @media(min-width: $desktop-width) {
+
+      justify-content: space-between;
+      gap:0;
     }
 
     & > :first-of-type {
@@ -64,6 +75,11 @@
       flex-basis: 100%;
 
       @media(min-width: $pre-sm-desktop-width) {
+
+        flex-basis: 55%;
+      }
+
+      @media(min-width: $desktop-width) {
 
         flex-basis: auto;
       }
